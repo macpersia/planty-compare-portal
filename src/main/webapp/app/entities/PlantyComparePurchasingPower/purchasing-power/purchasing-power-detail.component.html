@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="purchasingPower">
+            <h2><span jhiTranslate="plantyComparePortalApp.plantyComparePurchasingPowerPurchasingPower.detail.title">Purchasing Power</span> {{purchasingPower.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="plantyComparePortalApp.plantyComparePurchasingPowerPurchasingPower.year">Year</span></dt>
+                <dd>
+                    <span>{{purchasingPower.year}}</span>
+                </dd>
+                <dt><span jhiTranslate="plantyComparePortalApp.plantyComparePurchasingPowerPurchasingPower.city">City</span></dt>
+                <dd>
+                    <span>{{purchasingPower.city}}</span>
+                </dd>
+                <dt><span jhiTranslate="plantyComparePortalApp.plantyComparePurchasingPowerPurchasingPower.category">Category</span></dt>
+                <dd>
+                    <span>{{purchasingPower.category}}</span>
+                </dd>
+                <dt><span jhiTranslate="plantyComparePortalApp.plantyComparePurchasingPowerPurchasingPower.value">Value</span></dt>
+                <dd>
+                    <span>{{purchasingPower.value}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/purchasing-power', purchasingPower.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "plantyComparePortalApp": {
+    "plantyComparePurchasingPowerPurchasingPower": {
+      "home": {
+        "title": "Purchasing Powers",
+        "createLabel": "Create a new Purchasing Power",
+        "createOrEditLabel": "Create or edit a Purchasing Power",
+        "search": "Search for Purchasing Power"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Purchasing Power {{ id }}?"
+      },
+      "detail": {
+        "title": "Purchasing Power"
+      },
+      "year": "Year",
+      "city": "City",
+      "category": "Category",
+      "value": "Value"
+    }
+  },
+  "plantyComparePurchasingPowerApp": {
+    "plantyComparePurchasingPowerPurchasingPower": {
+      "created": "A new Purchasing Power is created with identifier {{ param }}",
+      "updated": "A Purchasing Power is updated with identifier {{ param }}",
+      "deleted": "A Purchasing Power is deleted with identifier {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "PurchasingPower",
+    "fields": [
+        {
+            "fieldName": "year",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190601175537",
+    "entityTableName": "purchasing_power",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "PlantyComparePurchasingPower",
+    "applications": "*",
+    "microserviceName": "PlantyComparePurchasingPower"
+}
